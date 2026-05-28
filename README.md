@@ -1,9 +1,14 @@
+
 # kost--kelompok-6-
 membuat apklikasi bebasis CLI dengan tema sistem kost-kostan untuk mata kuliah pemrograman lanjut
-# kost--kelompok-6-
-membuat apklikasi bebasis CLI dengan tema sistem kost-kostan untuk mata kuliah pemrograman lanjut
+
+Yehudha muman (25083000058)  feature/models-kamar
+Figo alvaro (25083000069) feature/models-pembayaran
+Fransesko Emanuel Sogelaka (25083000062) feature/kontrak
+Lois Anthony Rohi Bengngu (25083000075) feature/kost-main 
 python main.py
 python -m pytest tests/ -v
+
 models-kamar,models-pembayaran,kontrak,kos-main
                     +------------------+
                     |      Kamar       |
