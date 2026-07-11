@@ -1,14 +1,27 @@
+from models.kamar import KamarStandard, KamarDeluxe
+from models.penghuni import Penghuni
+from models.kontrak import Kontrak
+
+
 class Kost:
+
     def __init__(self):
-        self.daftar_kamar = []
-        self.daftar_penghuni = []
-        self.daftar_kontrak = []
+        self._daftar_kamar = []
+        self._kontrak = []
 
     def tambah_kamar(self, kamar):
-        self.daftar_kamar.append(kamar)
+        self._daftar_kamar.append(kamar)
 
-    def tambah_penghuni(self, penghuni):
-        self.daftar_penghuni.append(penghuni)
+    def tampilkan_kamar(self):
+        for k in self._daftar_kamar:
+            print(k)
 
-    def tambah_kontrak(self, kontrak):
-        self.daftar_kontrak.append(kontrak)
+    def sewa_kamar(self, penghuni, kamar, tanggal):
+        kontrak = Kontrak(penghuni, kamar, tanggal)
+        self._kontrak.append(kontrak)
+        return kontrak
+
+    def tampilkan_kontrak(self):
+        for k in self._kontrak:
+            print("----------------")
+            print(k)
