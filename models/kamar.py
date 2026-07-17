@@ -10,6 +10,9 @@ class Kamar(ABC):
         self._nomor = nomor
         self.harga = harga
         self._terisi = False
+    @property
+    def nomor(self):
+        return self._nomor   
 
     @property
     def harga(self):
